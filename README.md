@@ -1,3 +1,3 @@
 # Scripts
 
-- diffTimes: javascript function to calculate the duration into two hours whit the format HH:mm:ss using typescript
+- diffTimes: javascript function to calculate the duration between two hours with the format HH:mm:ss using typescript
