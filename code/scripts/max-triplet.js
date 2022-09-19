@@ -11,12 +11,15 @@ Test Cases
 const arr = [-1, 1, -2, 5] = 10
 const arr = [-1, 1, -2, 5];
 */
+
+import { obtenerConjuntoPotencia } from '../functions/potencia.js';
+
 const test1 = [-3, 1, 2, -2, 5, 6];
 const test2 = [-1, 1, -2, 5];
 const test3 = [
   20, 5, 1, 6, -85, 15, 7, 9, 10, 22, 35, 60, 1, 0, -7, 9, 8, 6, 5,
 ];
-const test4 = [1, 1, 3, -8, -100, 21, -9];
+const test4 = [-100, 21, 1, 3, -8, 1, -9];
 
 function maxTri(arr) {
   const { length } = arr;
@@ -32,6 +35,22 @@ function maxTri(arr) {
 
   return max;
 }
+const potencia1 = obtenerConjuntoPotencia(test1)
+  .filter((v) => v.length === 3)
+  .map((v) => v[0] * v[1] * v[2]);
+console.log(Math.max(...potencia1));
+const potencia2 = obtenerConjuntoPotencia(test2)
+  .filter((v) => v.length === 3)
+  .map((v) => v[0] * v[1] * v[2]);
+console.log(Math.max(...potencia2));
+const potencia3 = obtenerConjuntoPotencia(test3)
+  .filter((v) => v.length === 3)
+  .map((v) => v[0] * v[1] * v[2]);
+console.log(Math.max(...potencia3));
+const potencia4 = obtenerConjuntoPotencia(test4)
+  .filter((v) => v.length === 3)
+  .map((v) => v[0] * v[1] * v[2]);
+console.log(Math.max(...potencia4));
 
 console.log(maxTri(test1));
 console.log(maxTri(test2));
